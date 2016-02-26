@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Structural = AdapterDesignPatternTester.StructuralCode;
 using Real = AdapterDesignPatternTester.RealWorldCode;
-//using Structural = AdapterDesignPatternTester.StructuralCode;
+using My = AdapterDesignPatternTester.MyCode;
 
 namespace AdapterDesignPatternTester
 {
@@ -72,6 +72,21 @@ namespace AdapterDesignPatternTester
             #endregion
 
             #region My code in C#
+            My.ClasseDiAnimali classeDiAnimaliInvertebratiNonDettagliata = new My.ClasseDiAnimali(My.TipoDiClasseDiAnimali.Invertebrati);
+            classeDiAnimaliInvertebratiNonDettagliata.DescriviClasseDiAnimali();
+
+            My.ClasseDiAnimaliCheRecuperaDettagli classeDiAnimaliPesciDettagliata = new My.ClasseDiAnimaliCheRecuperaDettagli(My.TipoDiClasseDiAnimali.Pesci);
+            classeDiAnimaliPesciDettagliata.DescriviClasseDiAnimali();
+            My.ClasseDiAnimaliCheRecuperaDettagli classeDiAnimaliAnfibiDettagliata = new My.ClasseDiAnimaliCheRecuperaDettagli(My.TipoDiClasseDiAnimali.Anfibi);
+            classeDiAnimaliAnfibiDettagliata.DescriviClasseDiAnimali();
+            My.ClasseDiAnimaliCheRecuperaDettagli classeDiAnimaliRettiliDettagliata = new My.ClasseDiAnimaliCheRecuperaDettagli(My.TipoDiClasseDiAnimali.Rettili);
+            classeDiAnimaliRettiliDettagliata.DescriviClasseDiAnimali();
+            My.ClasseDiAnimaliCheRecuperaDettagli classeDiAnimaliUccelliDettagliata = new My.ClasseDiAnimaliCheRecuperaDettagli(My.TipoDiClasseDiAnimali.Uccelli);
+            classeDiAnimaliUccelliDettagliata.DescriviClasseDiAnimali();
+            My.ClasseDiAnimaliCheRecuperaDettagli classeDiAnimaliMammiferiDettagliata = new My.ClasseDiAnimaliCheRecuperaDettagli(My.TipoDiClasseDiAnimali.Mammiferi);
+            classeDiAnimaliMammiferiDettagliata.DescriviClasseDiAnimali();
+
+            Console.ReadKey();
             #endregion
         }
     }

@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyCode\DescrittoreDettagliatoDiAnimali.cs" />
+    <Compile Include="MyCode\ClasseDiAnimali.cs" />
+    <Compile Include="MyCode\ClasseDiAnimaliCheRecuperaDettagli.cs" />
+    <Compile Include="MyCode\TipoDiClasseDiAnimali.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealWorldCode\ChemicalDataBank.cs" />
@@ -53,9 +57,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MyCode\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
