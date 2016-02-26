@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Structural = AdapterDesignPatternTester.StructuralCode;
-//using Structural = AdapterDesignPatternTester.StructuralCode;
+using Real = AdapterDesignPatternTester.RealWorldCode;
 //using Structural = AdapterDesignPatternTester.StructuralCode;
 
 namespace AdapterDesignPatternTester
@@ -50,7 +50,25 @@ namespace AdapterDesignPatternTester
             #endregion
 
             #region Real world code in C#
+            // This real-world code demonstrates the use of a legacy chemical databank.
+            // Chemical compound objects access the databank through an Adapter interface. 
 
+            // Non adapted chemical compound
+            Real.Compound unknown = new Real.Compound("unknown");
+            unknown.Display();
+
+            // Adapter chemical compounds
+            Real.Compound water = new Real.RichCompound("Water");
+            water.Display();
+
+            Real.Compound benzene = new Real.RichCompound("Benzene");
+            benzene.Display();
+
+            Real.Compound ethanol = new Real.RichCompound("Ethanol");
+            ethanol.Display();
+
+            // Wait for user
+            Console.ReadKey();
             #endregion
 
             #region My code in C#
